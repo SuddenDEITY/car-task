@@ -1,0 +1,10 @@
+{% extends "car/base.html" %}
+{% block content %}
+<div class="hello">
+    {% for car in cars %}
+        <p>{{car.name}}</p>
+        <p>{{car.manufacturer_charge}}</p>
+        <p>{{car.price}}</p>
+    {% endfor %}
+</div>
+{% endblock %}
